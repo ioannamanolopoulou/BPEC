@@ -1,0 +1,55 @@
+# Export all names
+import(igraph)
+
+export(bpec.contourPlot,
+	bpec.covariatesPlot,
+	bpec.geoTree,
+	bpec.mcmc,
+	bpec.treePlot,
+	input,
+	preproc,
+	output.tree,
+	output.clust,	
+	output.mcmc,	
+	bpec,		
+	bpec.loadCoords,
+	bpec.loadSeq)
+
+
+                                        # Import all packages listed as Imports or Depends
+import( mvtnorm,
+    	maptools,
+    	sp,    	
+    	coda,
+	ggplot2    
+	)
+
+importFrom("fields", "world")
+importFrom(phytools,read.newick)
+importFrom(ape,collapse.singles)
+importFrom(ape,compute.brlen)
+importFrom(ape,write.tree)
+importFrom(ape,read.nexus.data)
+importFrom(phytools,read.newick)
+importFrom(fields,world)
+importFrom("grDevices", "col2rgb", "contourLines", "rgb")
+importFrom("graphics", "contour", "lines", "par", "points", "polygon","text")
+importFrom("methods", "slot")
+importFrom("stats", "dnorm", "quantile")
+importFrom("utils", "write.csv")
+importFrom("grDevices", "palette")
+importFrom("OpenStreetMap","openproj","openmap","autoplot.OpenStreetMap")
+importFrom("ggmap","ggmap","get_map")
+importFrom("utils", "count.fields", "read.table")
+
+S3method(plot,bpec)
+S3method(print,bpec)
+S3method(summary,bpec)
+S3method(mean,bpec)
+S3method(input,bpec)
+S3method(preproc,bpec)
+S3method(output.clust,bpec)
+S3method(output.tree,bpec)
+S3method(output.mcmc,bpec)
+
+useDynLib(BPEC, .registration = TRUE)
