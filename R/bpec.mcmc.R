@@ -1,5 +1,13 @@
 bpec.mcmc <- function(rawSeqs, coordsLocs, maxMig, iter, ds, postSamples=0, dims=-1)
 {
+   #   cord.dec = SpatialPoints(cbind(coordsLocs[,2], -coordsLocs[,1]), proj4string = CRS("+proj=longlat"))
+   #   cord.UTM <- spTransform(cord.dec, CRS("+init=epsg:32748"))
+   #   coordsLocs[,1:2] = cord.UTM@coords
+
+   #   cord.longlat <- spTransform(cord.UTM, CRS("+proj=longlat +datum=WGS84"))
+   #   cord.UTM <- cord.UTM@coords
+   #   cord.longlat <- cord.longlat@coords
+    
   if (dims == -1){
     dims = round(length(which((round(coordsLocs, digits = 0) == coordsLocs) == FALSE)) / nrow(coordsLocs), digits = 0)
   }
