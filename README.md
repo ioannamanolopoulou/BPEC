@@ -133,7 +133,7 @@ Argument      |Description
  #if you want to use your own dataset, use setwd() to enter the correct folder
  #then run the command below, changing the input parameters if necessary
  #rawSeqs <- bpec.loadSeq('haplotypes.nex')
- coordsLocs <- bpec.loadCoords(\"coordsLocsFile.txt\")\n"
+ coordsLocs <- bpec.loadCoords("coordsLocsFile.txt")
  
  # to set phenotypic/environmental covariate names manually, use (as appropriate)
  # colnames(CoordsLocs)[1:dims] <- c('lat','long','cov1','cov2','cov3')  
@@ -150,7 +150,7 @@ Argument      |Description
  #run the Markov chain Monte Carlo sampler
  bpecout <- bpec.mcmc(rawSeqs,coordsLocs,maxMig,iter,ds,postSamples,dims)
  
- par(mar=c(0,0,0,0),pty=\"m\",mfrow=c(1,2)) #No plot margins. Contours and tree side-by-side
+ par(mar=c(0,0,0,0),pty="m",mfrow=c(1,2)) #No plot margins. Contours and tree side-by-side
  
  # plot geographical cluster contour map
  bpec.contourPlot(bpecout, GoogleEarth=0, mapType = 'plain') 
@@ -173,7 +173,7 @@ Argument      |Description
  #run the Markov chain Monte Carlo sampler
  bpecout <- bpec.mcmc(rawSeqs,coordsLocs,maxMig,iter,ds,postSamples,dims)
  
- par(mar=c(0,0,0,0),pty=\"m\",mfrow=c(1,2))  #no plot margins, plot contours and tree side-by-side
+ par(mar=c(0,0,0,0),pty="m",mfrow=c(1,2))  #no plot margins, plot contours and tree side-by-side
  
  # plot geographical cluster contour map
  bpec.contourPlot(bpecout,GoogleEarth=0) 
@@ -185,7 +185,7 @@ Argument      |Description
  par(mfrow=c(2,3)) #split the plot window into 2x3 to fit all the covariates
  bpec.covariatesPlot(bpecout) 
  
- bpec.Geo <- bpec.geoTree(bpecout,file=\"GoogleEarthTree.kml\")
+ bpec.Geo <- bpec.geoTree(bpecout, file = "GoogleEarthTree.kml")
  
  
  ``` 
