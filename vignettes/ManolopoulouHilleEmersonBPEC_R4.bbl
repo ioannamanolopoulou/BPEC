@@ -1,0 +1,323 @@
+\begin{thebibliography}{47}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Arrigo(2013)}]{arrigo2013R2G2}
+Arrigo N (2013).
+\newblock \emph{{\pkg{R2G2}: Converting \proglang{R} CRAN Outputs into Google
+  Earth}}.
+\newblock \proglang{R} package version 1.0-2,
+  \urlprefix\url{https://CRAN.R-project.org/package=R2G2}.
+
+\bibitem[{Arrigo \emph{et~al.}(2012)Arrigo, Albert, Mickelson, and
+  Barker}]{arrigo2012quantitative}
+Arrigo N, Albert LP, Mickelson PG, Barker MS (2012).
+\newblock \enquote{{Quantitative Visualization of Biological Data in Google
+  Earth Using \pkg{R2G2}, an \proglang{R} CRAN Package}.}
+\newblock \emph{{Molecular Ecology Resources}}, \textbf{12}(6), 1177--1179.
+
+\bibitem[{Atteson(1999)}]{atteson1}
+Atteson K (1999).
+\newblock \enquote{{The Performance of Neighbor-Joining Methods of Phylogenetic
+  Recronstruction}.}
+\newblock \emph{Algorithmica}, \textbf{25}, 251--278.
+
+\bibitem[{Beaumont(2003)}]{beaumont}
+Beaumont M (2003).
+\newblock \enquote{{Estimation of Population Growth or Decline in Genetically
+  Monitored Populations}.}
+\newblock \emph{Genetics}, \textbf{164}, 1139--1160.
+
+\bibitem[{Bloomquist \emph{et~al.}(2010)Bloomquist, Lemey, and
+  Suchard}]{bloomquist2010three}
+Bloomquist EW, Lemey P, Suchard MA (2010).
+\newblock \enquote{{Three Roads Diverged? Routes to Phylogeographic
+  Inference}.}
+\newblock \emph{{Trends in Ecology \& Evolution}}, \textbf{25}(11), 626--632.
+
+\bibitem[{Cheng \emph{et~al.}(2013)Cheng, Connor, Sir{\'e}n, Aanensen, and
+  Corander}]{cheng2013hierarchical}
+Cheng L, Connor TR, Sir{\'e}n J, Aanensen DM, Corander J (2013).
+\newblock \enquote{Hierarchical and spatially explicit clustering of DNA
+  sequences with BAPS software.}
+\newblock \emph{Molecular biology and evolution}, \textbf{30}(5), 1224--1228.
+
+\bibitem[{Cornuet \emph{et~al.}(2014)Cornuet, Pudlo, Veyssier, Dehne-Garcia,
+  Gautier, Leblois, Marin, and Estoup}]{cornuet2014diyabc}
+Cornuet JM, Pudlo P, Veyssier J, Dehne-Garcia A, Gautier M, Leblois R, Marin
+  JM, Estoup A (2014).
+\newblock \enquote{{\pkg{DIYABC} v2.0: A Software to Make Approximate Bayesian
+  Computation Inferences about Population History Using Single Nucleotide
+  Polymorphism, DNA Sequence and Microsatellite Data}.}
+\newblock \emph{Bioinformatics}, \textbf{30}(8), 1187--1189.
+
+\bibitem[{Csardi and Nepusz(2006)}]{Csardi:2006uq}
+Csardi G, Nepusz T (2006).
+\newblock \enquote{{The \pkg{igraph} Software Package for Complex Network
+  Research}.}
+\newblock \emph{InterJournal}, \textbf{Complex Systems}, 1695.
+\newblock \urlprefix\url{http://igraph.org}.
+
+\bibitem[{{De Iorio} and Griffiths(2004{\natexlab{a}})}]{deiorio1}
+{De Iorio} M, Griffiths R (2004{\natexlab{a}}).
+\newblock \enquote{{Importance Sampling on Coalescent Histories. {I}}.}
+\newblock \emph{Advances in Applied Probability}, \textbf{36}, 417--433.
+
+\bibitem[{{De Iorio} and Griffiths(2004{\natexlab{b}})}]{deiorio2}
+{De Iorio} M, Griffiths R (2004{\natexlab{b}}).
+\newblock \enquote{{Importance Sampling on Coalescent Histories. {II}:
+  Subdivided Population Models}.}
+\newblock \emph{Advances in Applied Probability}, \textbf{36}, 434--454.
+
+\bibitem[{De~Maio \emph{et~al.}(2015)De~Maio, Wu, O'Reilly, and
+  Wilson}]{de2015new}
+De~Maio N, Wu CH, O'Reilly KM, Wilson D (2015).
+\newblock \enquote{New routes to phylogeography: a Bayesian structured
+  coalescent approximation.}
+\newblock \emph{PLoS genetics}, \textbf{11}(8), e1005421.
+
+\bibitem[{Desper and Gascuel(2002)}]{gascuel1}
+Desper R, Gascuel O (2002).
+\newblock \enquote{{Fast and Accurate Phylogeny Reconstruction Algorithms Based
+  on the Minimum-Evolution Principle}.}
+\newblock In \emph{WABI '02: Proceedings of the Second International Workshop
+  on Algorithms in Bioinformatics}, pp. 357--374. Springer-Verlag.
+
+\bibitem[{Drummond \emph{et~al.}(2012)Drummond, Suchard, Xie, and
+  Rambaut}]{drummond2012bayesian}
+Drummond AJ, Suchard MA, Xie D, Rambaut A (2012).
+\newblock \enquote{{Bayesian Phylogenetics with \pkg{BEAUti} and the
+  \pkg{BEAST} 1.7}.}
+\newblock \emph{Molecular biology and evolution}, \textbf{29}(8), 1969--1973.
+
+\bibitem[{Ethier and Griffiths(1987)}]{ethiergriffiths}
+Ethier SN, Griffiths RC (1987).
+\newblock \enquote{{The Infinitely-Many-Sites Model as a Measure-Valued
+  Diffusion}.}
+\newblock \emph{The Annals of Probability}, \textbf{15}, 515--545.
+
+\bibitem[{Felsenstein(1983)}]{felsen3}
+Felsenstein J (1983).
+\newblock \enquote{{Statistical Inference of Phylogenies}.}
+\newblock \emph{Journal Of The Royal Statistical Society A}, \textbf{146},
+  246--272.
+
+\bibitem[{Gascuel and Steel(2006)}]{gascuelsteel}
+Gascuel O, Steel M (2006).
+\newblock \enquote{{Neighbor-Joining Revealed}.}
+\newblock \emph{{Molecular Biology and Evolution}}, \textbf{23}, 1997--2000.
+
+\bibitem[{Guillot \emph{et~al.}(2005)Guillot, Mortier, and
+  Estoup}]{guillot2005geneland}
+Guillot G, Mortier F, Estoup A (2005).
+\newblock \enquote{{\pkg{GENELAND}: A Computer Package for Landscape
+  Genetics}.}
+\newblock \emph{Molecular Ecology Notes}, \textbf{5}(3), 712--715.
+
+\bibitem[{Guindon \emph{et~al.}(2016)Guindon, Guo, and
+  Welch}]{guindon2016demographic}
+Guindon S, Guo H, Welch D (2016).
+\newblock \enquote{Demographic inference under the coalescent in a spatial
+  continuum.}
+\newblock \emph{Theoretical population biology}, \textbf{111}, 43--50.
+
+\bibitem[{Hein \emph{et~al.}(2004)Hein, Schierup, and Wiuf}]{hein2004gene}
+Hein J, Schierup M, Wiuf C (2004).
+\newblock \emph{{Gene Genealogies, Variation and Evolution: A Primer in
+  Coalescent Theory}}.
+\newblock {Oxford University Press}.
+
+\bibitem[{Hickerson \emph{et~al.}(2010)Hickerson, Carstens, Cavender-Bares,
+  Crandall, Graham, Johnson, Rissler, Victoriano, and
+  Yoder}]{hickerson2010phylogeography}
+Hickerson M, Carstens B, Cavender-Bares J, Crandall K, Graham C, Johnson J,
+  Rissler L, Victoriano P, Yoder A (2010).
+\newblock \enquote{Phylogeography's past, present, and future: 10 years after.}
+\newblock \emph{Molecular Phylogenetics and Evolution}, \textbf{54}(1),
+  291--301.
+
+\bibitem[{Hijmans(2015)}]{hijmans2015raster}
+Hijmans RJ (2015).
+\newblock \emph{\pkg{raster}: Geographic Data Analysis and Modeling}.
+\newblock \proglang{R} package version 2.5-2,
+  \urlprefix\url{https://CRAN.R-project.org/package=raster}.
+
+\bibitem[{Hijmans \emph{et~al.}(2016)Hijmans, Phillips, Leathwick, and
+  Elith}]{hijmans2014species}
+Hijmans RJ, Phillips S, Leathwick J, Elith J (2016).
+\newblock \emph{\pkg{dismo}: Species Distribution Modeling}.
+\newblock \proglang{R} package version 1.0-15,
+  \urlprefix\url{https://CRAN.R-project.org/package=dismo}.
+
+\bibitem[{Huelsenbeck and Ronquist(2001)}]{mrb}
+Huelsenbeck J, Ronquist F (2001).
+\newblock \enquote{{\pkg{Mr{B}ayes}: {B}ayesian Inference on Phylogenetic
+  Trees}.}
+\newblock \emph{Bioinformatics}, \textbf{17}, 754--755.
+
+\bibitem[{Jay \emph{et~al.}(2015)Jay, Fran{\c{c}}ois, Durand, and
+  Blum}]{jay2015pops}
+Jay F, Fran{\c{c}}ois O, Durand EY, Blum MG (2015).
+\newblock \enquote{POPS: A Software for Prediction of Population Genetic
+  Structure Using Latent Regression Models Olivier Fran{\c{c}}ois Eric Y.
+  Durand.}
+\newblock \emph{Journal of Statistical Software}, \textbf{68}(9).
+
+\bibitem[{Joly \emph{et~al.}(2007)Joly, Stevens, and van
+  Vuuren}]{joly2007haplotype}
+Joly S, Stevens MI, van Vuuren BJ (2007).
+\newblock \enquote{{Haplotype Networks Can be Misleading in the Presence of
+  Missing Data}.}
+\newblock \emph{{Systematic Biology}}, \textbf{56}(5), 857--862.
+
+\bibitem[{Jombart \emph{et~al.}(2010)Jombart, Devillard, and
+  Balloux}]{jombart2010discriminant}
+Jombart T, Devillard S, Balloux F (2010).
+\newblock \enquote{{Discriminant Analysis of Principal Components: A New Method
+  for the Analysis of Genetically Structured Populations}.}
+\newblock \emph{BMC genetics}, \textbf{11}(1), 94.
+
+\bibitem[{Kingman(1982)}]{kingman}
+Kingman J (1982).
+\newblock \enquote{{The Coalescent}.}
+\newblock \emph{Stochastic Processes and their Application}, \textbf{13}(3),
+  235--248.
+
+\bibitem[{Knowles(2009)}]{knowles2009statistical}
+Knowles LL (2009).
+\newblock \enquote{{Statistical Phylogeography}.}
+\newblock \emph{Annual Review of Ecology, Evolution, and Systematics},
+  \textbf{40}, 593--612.
+
+\bibitem[{Knowles and Maddison(2002)}]{knowles2002statistical}
+Knowles LL, Maddison WP (2002).
+\newblock \enquote{{Statistical Phylogeography}.}
+\newblock \emph{Molecular Ecology}, \textbf{11}(12), 2623--2635.
+
+\bibitem[{Knuth(1998)}]{hash1}
+Knuth D (1998).
+\newblock \enquote{{Sorting and Searching}.}
+\newblock In \emph{{The Art of Computer Programming}}, volume~3.
+  Addison-Wesley.
+
+\bibitem[{Lemey \emph{et~al.}(2009)Lemey, Rambaut, Drummond, and
+  Suchard}]{lemey2009bayesian}
+Lemey P, Rambaut A, Drummond AJ, Suchard MA (2009).
+\newblock \enquote{{Bayesian Phylogeography Finds its Roots}.}
+\newblock \emph{{PLoS Computational Biology}}, \textbf{5}(9), e1000520.
+
+\bibitem[{Manolopoulou and Emerson(2012)}]{manolopoulou2012phylogeographic}
+Manolopoulou I, Emerson BC (2012).
+\newblock \enquote{{Phylogeographic Ancestral Inference Using the Coalescent
+  Model on Haplotype Trees}.}
+\newblock \emph{Journal of Computational Biology}, \textbf{19}(6), 745--755.
+
+\bibitem[{Manolopoulou \emph{et~al.}(2011)Manolopoulou, Legarreta, Emerson,
+  Brooks, and Tavar{\'e}}]{manolopoulou2011bayesian}
+Manolopoulou I, Legarreta L, Emerson BC, Brooks S, Tavar{\'e} S (2011).
+\newblock \enquote{{A Bayesian Approach to Phylogeographic Clustering}.}
+\newblock \emph{{Interface Focus}}, p. rsfs20110054.
+
+\bibitem[{McCormack \emph{et~al.}(2013)McCormack, Hird, Zellmer, Carstens, and
+  Brumfield}]{mccormack2013applications}
+McCormack JE, Hird SM, Zellmer AJ, Carstens BC, Brumfield RT (2013).
+\newblock \enquote{Applications of next-generation sequencing to phylogeography
+  and phylogenetics.}
+\newblock \emph{Molecular Phylogenetics and Evolution}, \textbf{66}(2),
+  526--538.
+
+\bibitem[{Papastamoulis and Iliopoulos(2010)}]{papastamoulis2010artificial}
+Papastamoulis P, Iliopoulos G (2010).
+\newblock \enquote{{An Artificial Allocations Based Solution to the Label
+  Switching Problem in Bayesian Analysis of Mixtures of Distributions}.}
+\newblock \emph{Journal of Computational and Graphical Statistics},
+  \textbf{19}(2).
+
+\bibitem[{Plummer \emph{et~al.}(2006)Plummer, Best, Cowles, and
+  Vines}]{plummer2006coda}
+Plummer M, Best N, Cowles K, Vines K (2006).
+\newblock \enquote{{CODA: Convergence Diagnosis and Output Analysis for MCMC}.}
+\newblock \emph{\proglang{R} News}, \textbf{6}(1), 7--11.
+\newblock \urlprefix\url{http://CRAN.R-project.org/doc/Rnews/}.
+
+\bibitem[{Pritchard \emph{et~al.}(2000)Pritchard, Stephens, and
+  Donnelly}]{pritchard2000inference}
+Pritchard JK, Stephens M, Donnelly P (2000).
+\newblock \enquote{{Inference of Population Structure Using Multilocus Genotype
+  Data}.}
+\newblock \emph{Genetics}, \textbf{155}(2), 945--959.
+
+\bibitem[{{\proglang{R} Core Team}(2017)}]{RCRANcitation2017}
+{\proglang{R} Core Team} (2017).
+\newblock \emph{{\proglang{R}: A Language and Environment for Statistical
+  Computing}}.
+\newblock \proglang{R} Foundation for Statistical Computing, Vienna, Austria.
+\newblock \urlprefix\url{https://www.R-project.org/}.
+
+\bibitem[{Revell(2012)}]{Revell:2012fk}
+Revell LJ (2012).
+\newblock \enquote{{\pkg{phytools}: An \proglang{R} Package for Phylogenetic
+  Comparative Biology (and Other Things)}.}
+\newblock \emph{Methods in Ecology and Evolution}, \textbf{3}, 217--223.
+
+\bibitem[{Rzhetsky and Nei(1993)}]{rzhetsky}
+Rzhetsky A, Nei M (1993).
+\newblock \enquote{{{T}heoretical Foundation of the Minimum-Evolution Method of
+  Phylogenetic Inference}.}
+\newblock \emph{Molecular Biology and Evolution}, \textbf{10}, 1073--1095.
+
+\bibitem[{Stephens(2000{\natexlab{a}})}]{stephensmixture}
+Stephens M (2000{\natexlab{a}}).
+\newblock \enquote{{Bayesian Analysis of Mixture Models with an Unknown Number
+  of Components- An Alternative to Reversible Jump Methods}.}
+\newblock \emph{The Annals of Statistics}, \textbf{28}, 40--74.
+
+\bibitem[{Stephens(2000{\natexlab{b}})}]{labelling}
+Stephens M (2000{\natexlab{b}}).
+\newblock \enquote{{Dealing With Label-Switching in Mixture Models}.}
+\newblock \emph{Journal of the Royal Statistical Society B}, \textbf{62},
+  795--809.
+
+\bibitem[{Tarkhnishvili \emph{et~al.}(2001)Tarkhnishvili, Hille, and
+  B\"ohme}]{tarkhnishvili2001humid}
+Tarkhnishvili D, Hille A, B\"ohme W (2001).
+\newblock \enquote{{Humid Forest Refugia, Speciation and Secondary
+  Introgression Between Evolutionary Lineages: Differentiation in a Near
+  Eastern Brown Frog, \textit{Rana Macrocnemis}}.}
+\newblock \emph{Biological Journal of the Linnean Society}, \textbf{74}(2),
+  141--156.
+
+\bibitem[{Valiente(2010)}]{valiente2010combinatorial}
+Valiente G (2010).
+\newblock \emph{{Combinatorial Pattern Matching Algorithms in Computational
+  Biology Using \proglang{Perl} and \proglang{R}}}.
+\newblock CRC Press.
+
+\bibitem[{Veith \emph{et~al.}(2003{\natexlab{a}})Veith, Kosuch, and
+  Vences}]{veith2003climatic}
+Veith M, Kosuch J, Vences M (2003{\natexlab{a}}).
+\newblock \enquote{{Climatic Oscillations Triggered Post-Messinian Speciation
+  of Western Palearctic Brown Frogs (Amphibia, Ranidae)}.}
+\newblock \emph{{Molecular Phylogenetics and Evolution}}, \textbf{26}(2),
+  310--327.
+
+\bibitem[{Veith \emph{et~al.}(2003{\natexlab{b}})Veith, Schmidtler, Kosuch,
+  Baran, and Seitz}]{veith2003palaeoclimatic}
+Veith M, Schmidtler J, Kosuch J, Baran I, Seitz A (2003{\natexlab{b}}).
+\newblock \enquote{{Palaeoclimatic Changes Explain Anatolian Mountain Frog
+  Evolution: A Test for Alternating Vicariance and Dispersal Events}.}
+\newblock \emph{Molecular Ecology}, \textbf{12}(1), 185--199.
+
+\bibitem[{Wakeley(2013)}]{wakeley2013coalescent}
+Wakeley J (2013).
+\newblock \enquote{Coalescent Theory Has Many New Branches.}
+\newblock \emph{{Theoretical Population Biology}}, \textbf{87}, 1.
+
+\end{thebibliography}
