@@ -9,7 +9,7 @@
  (longitude and latitude) along with additional environmental or phenotypic characteristics, the algorithm simultaneously 
  draws inferences about the genealogy (in the form of a haplotype tree) and the population clustering. 
  In addition, the algorithm identifies locations with high posterior probability of being ancestral. Please
- refer to the BPEC R-package manual and vignette for more information. 
+ refer to the BPEC R-package [vignette](https://arxiv.org/abs/1604.01617) for more information. 
 
 
 ## Usage
