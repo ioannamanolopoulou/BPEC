@@ -9,9 +9,9 @@ export(bpec.contourPlot,
 	input,
 	preproc,
 	output.tree,
-	output.clust,	
-	output.mcmc,	
-	bpec,		
+	output.clust,
+	output.mcmc,
+	bpec,
 	bpec.loadCoords,
 	bpec.loadSeq)
 
@@ -19,9 +19,10 @@ export(bpec.contourPlot,
                                         # Import all packages listed as Imports or Depends
 import( mvtnorm,
     	maptools,
-    	sp,    	
+    	sp,
     	coda,
-	ggplot2    
+       ggplot2,
+       utils
 	)
 
 importFrom("fields", "world")

@@ -10,12 +10,7 @@
 
 #include <R.h>
 #include <Rmath.h>
-//#include <Rinternals.h> 
-//#include <R_ext/Utils.h>  
 
-define_exception_type(int);
-extern struct exception_context the_exception_context[1];
-struct exception_context the_exception_context[1];
 
 void multiplyDD(long int *AA,int BB,int dimdim,int maxcap);
 long int divideDD(long int *AA,int BB, int CC,int dimdim,int modpower,int maxcap);

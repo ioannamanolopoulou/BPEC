@@ -246,3 +246,8 @@ struct exception_context { \
 
 
 #endif /* CEXCEPT_H */
+
+define_exception_type(int);
+extern struct exception_context the_exception_context[1];
+struct exception_context the_exception_context[1];
+
