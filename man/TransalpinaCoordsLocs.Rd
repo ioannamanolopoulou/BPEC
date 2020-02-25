@@ -9,4 +9,9 @@
      \references{
 B.M. von Reumont, J.-F. Struwe, J. Schwarzer and B. Misof (2012)  Phylogeography of the burnet moth Zygaena transalpina-complex: molecular and morphometrical differentiation suggests glacial refugia in Southern France, Western Europe and micro refugia within the Alps. Journal of Zoological Systematics and Evolutionary Research.      
      }
+     \examples{
+#to use the example dataset:
+data(TransalpinaCoordsLocs)
+coordsLocs <- TransalpinaCoordsLocs
+}
      \keyword{Burnet Moth}

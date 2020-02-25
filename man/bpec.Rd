@@ -74,6 +74,10 @@ Three plotting functions are available. \code{bpec.contourPlot} shows the inferr
 Ioanna Manolopoulou <ioanna.manolopoulou@gmail.com>, Axel Hille <axel.hille@gmx.net>
 }
 \references{
+I. Manolopoulou, A. Hille, B.C.Emerson B (2020). BPEC: An R Package for
+Bayesian Phylogeographic and Ecological Clustering. \emph{Journal of
+Statistical Software}, 92(3), 1-32. doi: 10.18637/jss.v092.i03
+
 I. Manolopoulou and B.C. Emerson (2012). Phylogeographic ancestral inference using the coalescent model on haplotype trees. \emph{Journal of Computational Biology}, 19(6), 745-755.
 
 I. Manolopoulou, L. Legarreta, B.C. Emerson, S. Brooks, and S. Tavar? (2011). A Bayesian approach to phylogeographic clustering. \emph{Interface focus}, rsfs20110054.
@@ -90,13 +94,13 @@ S.P. Brooks, I. Manolopoulou, and B.C. Emerson (2007). \emph{Assessing the Effec
 \keyword{phylogenetics}
 
 \examples{
-## if you want to load the `mini' example Brown Frog dataset
-data(MacrocnemisRawSeqs)
-data(MacrocnemisCoordsLocsMini)
-rawSeqs <- MacrocnemisRawSeqs
-coordsLocs <- MacrocnemisCoordsLocsMini
+  ## if you want to load the `mini' example Brown Frog dataset
+  data(MacrocnemisRawSeqs)
+  data(MacrocnemisCoordsLocsMini)
+  rawSeqs <- MacrocnemisRawSeqs
+  coordsLocs <- MacrocnemisCoordsLocsMini
 
-dims <- 3 #this is 2 if you only have geographical longitude/latitude. 
+  dims <- 3 #this is 2 if you only have geographical longitude/latitude. 
 #(add 1 for each environmental or phenotypic covariate)
 maxMig <- 2 #you will need a higher maximum number of migrations, suggest 7
 ds <- 0 #start with ds=0 and increase to 1 and then to 2

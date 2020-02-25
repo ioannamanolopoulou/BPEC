@@ -15,4 +15,10 @@ M. Veith, J.F. Schmidtler, J. Kosuch, I. Baran and A. Seitz (2003) Palaeoclimati
 M. Veith, J. Kosuch and M. Vences (2003) Climatic oscillations triggered post-Messinian speciation of Western Palearctic brown frogs (Amphibia, Ranidae). Molecular Phylogenetics and Evolution. 
 
      }
+     \examples{
+#to use the example dataset:
+data(CladeBrownFrogsCoordsLocs)
+coordsLocs <- CladeBrownFrogsCoordsLocs
+}
+
      \keyword{Brown Frog}

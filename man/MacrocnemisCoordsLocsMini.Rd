@@ -9,14 +9,19 @@
      }
      \usage{MacrocnemisCoordsLocsMini}
      \format{In total 21 sampling locations with one haplotype in each. For each observation, longitude, latitude, plus Annual Mean 
-Temperature (degrees Celsius x 10) from the \url{www.worldclim.org} database.}
+Temperature (degrees Celsius x 10) from the \url{http://www.worldclim.org} database.}
     
      \references{
-D. Tarkhnishvili, A. Hille  and W. Böhme (2001) 
+D. Tarkhnishvili, A. Hille  and W. B?hme (2001) 
 Humid forest refugia, speciation and secondary introgression between evolutionary lineages: differentiation in a Near Eastern brown frog, Rana macrocnemis. Biological Journal of the Linnean Society.
 
       A. Hille, I. Manolopoulou and D. Tarkhnisvili (2015)
 Detecting landscape-dependent selection with Bayesian phylogeographic and ecological clustering: 
 comparison of recombinant microsatellite and mtDNA haplotype data (unpublished).
      }
+     \examples{
+#to use the example dataset:
+data(MacrocnemisCoordsLocsMini)
+coordsLocs <- MacrocnemisCoordsLocsMini
+}
      \keyword{Brown Frog}

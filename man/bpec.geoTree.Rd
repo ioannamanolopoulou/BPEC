@@ -20,6 +20,10 @@
 }
 
 \references{
+I. Manolopoulou, A. Hille, B.C.Emerson B (2020). BPEC: An R Package for
+Bayesian Phylogeographic and Ecological Clustering. \emph{Journal of
+Statistical Software}, 92(3), 1-32. doi: 10.18637/jss.v092.i03
+
 I. Manolopoulou and B.C. Emerson (2012). Phylogeographic ancestral inference using the coalescent model on haplotype trees. \emph{Journal of Computational Biology}, 19(6), 745-755.
 
 G. Valiente (2009). \emph{Combinational Pattern Matching Algorithms in Computational Biology Using Perl and R}. CRC Press.

@@ -44,9 +44,13 @@ The space of possible clusterings is vast and highly multi-modal. The migration 
 }
 
 \references{
+I. Manolopoulou, A. Hille, B.C.Emerson B (2020). BPEC: An R Package for
+Bayesian Phylogeographic and Ecological Clustering. \emph{Journal of
+Statistical Software}, 92(3), 1-32. doi: 10.18637/jss.v092.i03
+
 I. Manolopoulou and B.C. Emerson (2012). Phylogeographic ancestral inference using the coalescent model on haplotype trees. \emph{Journal of Computational Biology}, 19(6), 745-755.
 
-I. Manolopoulou, L. Legarreta, B.C. Emerson, S. Brooks, and S. Tavaré (2011). A Bayesian approach to phylogeographic clustering. \emph{Interface focus}, rsfs20110054.
+I. Manolopoulou, L. Legarreta, B.C. Emerson, S. Brooks, and S. Tavar? (2011). A Bayesian approach to phylogeographic clustering. \emph{Interface focus}, rsfs20110054.
 
  Adam M. Costello and Cosmin Truta (2008) \code{cexcept.h} exception handling interface in C http://www.nicemice.net/cexcept/.
 

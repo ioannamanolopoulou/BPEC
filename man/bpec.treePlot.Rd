@@ -24,6 +24,10 @@ cluster. Unsampled haplotypes are represented by black dots. Thickness of tree e
   don't cross. The label which will be shown correspond to the original labels provided by the user. In cases where 2 sequences (with different labels) were collapsed to the same haplotype, the smallest (in number) of the two labels will be shown. }
 
  \references{
+ I. Manolopoulou, A. Hille, B.C.Emerson B (2020). BPEC: An R Package for
+Bayesian Phylogeographic and Ecological Clustering. \emph{Journal of
+Statistical Software}, 92(3), 1-32. doi: 10.18637/jss.v092.i03
+
 G. Csardi, T. Nepusz (2006). The igraph software package for complex network research. \emph{InterJournal, Complex Systems}, 1695(5), 1-9.
 
 I. Manolopoulou and B.C. Emerson (2012). Phylogeographic ancestral inference using the coalescent model on haplotype trees. \emph{Journal of Computational Biology}, 19(6), 745-755.

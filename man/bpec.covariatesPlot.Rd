@@ -16,7 +16,12 @@ Produces plots for all additional (environmental or phenotypic) covariate, where
 }
 \author{Ioanna Manolopoulou}
 \references{
-I. Manolopoulou, L. Legarreta, B.C. Emerson, S. Brooks, and S. Tavaré (2011). A Bayesian approach to phylogeographic clustering. \emph{Interface focus}, rsfs20110054.
+
+I. Manolopoulou, A. Hille, B.C.Emerson B (2020). BPEC: An R Package for
+Bayesian Phylogeographic and Ecological Clustering. \emph{Journal of
+Statistical Software}, 92(3), 1-32. doi: 10.18637/jss.v092.i03
+
+I. Manolopoulou, L. Legarreta, B.C. Emerson, S. Brooks, and S. Tavare (2011). A Bayesian approach to phylogeographic clustering. \emph{Interface focus}, rsfs20110054.
 }
 
 \examples{

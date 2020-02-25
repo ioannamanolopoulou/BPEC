@@ -28,9 +28,18 @@ Produces a contour plot overlayed on a map. If \code{GoogleEarth=1}, files which
 }
 \author{Ioanna Manolopoulou, Axel Hille and Steve Brooks}
 \references{
-I. Manolopoulou, L. Legarreta, B.C. Emerson, S. Brooks, and S. Tavaré (2011). A Bayesian approach to phylogeographic clustering. \emph{Interface focus}, rsfs20110054.
 
-S.P. Brooks, I. Manolopoulou, and B.C. Emerson (2007). \emph{Assessing the Effect of Genetic Mutation - A Bayesian Framework for Determining Population History from DNA Sequence Data}. Bayesian Statistics 8. Oxford University Press. 
+I. Manolopoulou, A. Hille, B.C.Emerson B (2020). BPEC: An R Package for
+Bayesian Phylogeographic and Ecological Clustering. \emph{Journal of
+Statistical Software}, 92(3), 1-32. doi: 10.18637/jss.v092.i03
+
+D. Kahle and H. Wickham. ggmap: Spatial Visualization with
+  ggplot2. The R Journal, 5(1), 144-161. URL
+  http://journal.r-project.org/archive/2013-1/kahle-wickham.pdf
+  
+I. Manolopoulou, L. Legarreta, B.C. Emerson, S. Brooks, and S. Tavare (2011). A Bayesian approach to phylogeographic clustering. \emph{Interface focus}, rsfs20110054.
+
+S.P. Brooks, I. Manolopoulou, and B.C. Emerson (2007). Assessing the Effect of Genetic Mutation - A Bayesian Framework for Determining Population History from DNA Sequence Data. \emph{Bayesian Statistics 8}. Oxford University Press. 
 }
 
 \examples{

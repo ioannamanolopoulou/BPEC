@@ -263,87 +263,94 @@ We used 40 mitochondrial cytochrome b sequences of Near Eastern brown frogs - \e
 
 \begin{figure}[h!]
 \centering
-<< fig = TRUE, width=5, height=3,echo=FALSE,results=hide >>=
-library(BPEC)
-data("MacrocnemisRawSeqs")
-data("MacrocnemisCoordsLocs")
-rawSeqs <- MacrocnemisRawSeqs
-coordsLocs <- MacrocnemisCoordsLocs
-library(ggplot2)
-library(ggmap)
-
-#unlist the sequences
-rawSeqsList <- unlist(rawSeqs)
-rawSeqsList <- matrix(rawSeqsList, nrow = length(rawSeqs[[1]]), ncol = length(rawSeqs))
-rawSeqsList <- t(rawSeqsList)
-
-#identify any nucleotide sites which are identical for all sequences
-delCol <- NULL
-for(i in 1:ncol(rawSeqsList)) {
-  if (length(unique(rawSeqsList[, i])) == 1) {
-    delCol <- c(delCol, i)
-  }
-}
-rm(rawSeqsList)
-
-#remove such nucleotide sites
-if (is.null(delCol) == FALSE) {
-  for(i in 1:length(rawSeqs)) {
-    rawSeqs[[i]] <- rawSeqs[[i]][-delCol]
-  }
-}
-
-#camerani sequences are characterised by a 'C' nucleotide in the 3rd SNP site of the sequences
-camerani <- numeric(length(rawSeqs))
-for(i in 1:length(rawSeqs))
-{
-  if(rawSeqs[[i]][3] == 'c'){
-    camerani[i] <- 1
-  }
-}
-
-#In each location, count how many sequences within are camerani, divide by total number of sequences in each location. The geographical information is available per sequence, so the first instance of each location will contain the camerani percentage, whereas any duplicate locations will be stored as '-1' (but their sequence information included in the first instance).
-cameraniperloc <- camerani
-done <- numeric(length(rawSeqs))
-for(i in 1:length(rawSeqs))
-{
-  nlocs <- 1
-  for(j in 1:length(rawSeqs))
-  {
-    if(done[j] == 0 && i!=j && coordsLocs[i,1] == coordsLocs[j,1] && coordsLocs[i,2] == coordsLocs[j,2]){
-      cameraniperloc[i] <- cameraniperloc[i] + cameraniperloc[j]
-      nlocs <- nlocs + 1
-      done[j] <- 1
-      cameraniperloc[j] <- -1
-    }
-  }
-  if(nlocs > 1 )
-  {
-    cameraniperloc[i] <- round(cameraniperloc[i]/nlocs,2)
-  }
-  done[i] <- 1
-}
-
-#Plot all unique locations, where the colour is given by the percentage of camerani
-savex <- coordsLocs[cameraniperloc > -0.5,2]
-savey <- coordsLocs[cameraniperloc >-0.5,1]
-savecol <- rgb(cameraniperloc[cameraniperloc>-0.5],0,0,max=1)
-
-style1 <- paste('feature:all|element:labels|visibility:off',
-                '&style=feature:road|element:all|visibility:off',
-                '&style=feature:administrative|element:geometry|visibility:off',
-                '&style=feature:transit.line|element:geometry|visibility:off',
-                '&style=feature:water|element:geometry.fill|color:0xffffff',
-                sep="")
-totalMap <-  ggmap::get_googlemap(c((min(savex) + max(savex))/2, (min(savey) + max(savey))/2), zoom = 7, maptype = "terrain", color = "bw", style = style1, messaging = FALSE)
-contourMap <- ggmap::ggmap(totalMap)
-savexy <- data.frame(longitude = savex, latitude = savey)
-contourMap <- contourMap + ggplot2::geom_point(data = savexy, ggplot2::aes(x = longitude,y = latitude), size=1.4, color = savecol)
-contourMap <- contourMap + labs(x="longitude", y="latitude")
-plot(contourMap)
-@
-\caption{\label{BrownFrogMap} The sampling localities for \emph{R.~m.~camerani} and \emph{R.~m.~macrocnemis} overlayed onto the map. Colour represents proportion of \emph{R.~m.~camerani} versus \emph{R.~m.~macrocnemis} individuals sampled, with red corresponding to 100\% \emph{R.~m.~camerani}, black 100\% \emph{R.~m.~macrocnemis} and brown corresponding to mixed populations. }
+\includegraphics[width=10cm]{ManolopoulouHilleEmersonBPEC_R4-001.jpg}
+\caption{ \label{BrownFrogMap} The sampling localities for \emph{R.~m.~camerani} and \emph{R.~m.~macrocnemis} overlayed onto the map. Colour represents proportion of \emph{R.~m.~camerani} versus \emph{R.~m.~macrocnemis} individuals sampled, with red corresponding to 100\% \emph{R.~m.~camerani}, black 100\% \emph{R.~m.~macrocnemis} and brown corresponding to mixed populations.}
 \end{figure}
+
+
+% \begin{figure}[h!]
+% \centering
+% << fig = TRUE, width=5, height=3,echo=FALSE,results=hide >>=
+% library(BPEC)
+% data("MacrocnemisRawSeqs")
+% data("MacrocnemisCoordsLocs")
+% rawSeqs <- MacrocnemisRawSeqs
+% coordsLocs <- MacrocnemisCoordsLocs
+% library(ggplot2)
+% library(ggmap)
+% 
+% #unlist the sequences
+% rawSeqsList <- unlist(rawSeqs)
+% rawSeqsList <- matrix(rawSeqsList, nrow = length(rawSeqs[[1]]), ncol = length(rawSeqs))
+% rawSeqsList <- t(rawSeqsList)
+% 
+% #identify any nucleotide sites which are identical for all sequences
+% delCol <- NULL
+% for(i in 1:ncol(rawSeqsList)) {
+%   if (length(unique(rawSeqsList[, i])) == 1) {
+%     delCol <- c(delCol, i)
+%   }
+% }
+% rm(rawSeqsList)
+% 
+% #remove such nucleotide sites
+% if (is.null(delCol) == FALSE) {
+%   for(i in 1:length(rawSeqs)) {
+%     rawSeqs[[i]] <- rawSeqs[[i]][-delCol]
+%   }
+% }
+% 
+% #camerani sequences are characterised by a 'C' nucleotide in the 3rd SNP site of the sequences
+% camerani <- numeric(length(rawSeqs))
+% for(i in 1:length(rawSeqs))
+% {
+%   if(rawSeqs[[i]][3] == 'c'){
+%     camerani[i] <- 1
+%   }
+% }
+% 
+% #In each location, count how many sequences within are camerani, divide by total number of sequences in each location. The geographical information is available per sequence, so the first instance of each location will contain the camerani percentage, whereas any duplicate locations will be stored as '-1' (but their sequence information included in the first instance).
+% cameraniperloc <- camerani
+% done <- numeric(length(rawSeqs))
+% for(i in 1:length(rawSeqs))
+% {
+%   nlocs <- 1
+%   for(j in 1:length(rawSeqs))
+%   {
+%     if(done[j] == 0 && i!=j && coordsLocs[i,1] == coordsLocs[j,1] && coordsLocs[i,2] == coordsLocs[j,2]){
+%       cameraniperloc[i] <- cameraniperloc[i] + cameraniperloc[j]
+%       nlocs <- nlocs + 1
+%       done[j] <- 1
+%       cameraniperloc[j] <- -1
+%     }
+%   }
+%   if(nlocs > 1 )
+%   {
+%     cameraniperloc[i] <- round(cameraniperloc[i]/nlocs,2)
+%   }
+%   done[i] <- 1
+% }
+% 
+% #Plot all unique locations, where the colour is given by the percentage of camerani
+% savex <- coordsLocs[cameraniperloc > -0.5,2]
+% savey <- coordsLocs[cameraniperloc >-0.5,1]
+% savecol <- rgb(cameraniperloc[cameraniperloc>-0.5],0,0,max=1)
+% 
+% style1 <- paste('feature:all|element:labels|visibility:off',
+%                 '&style=feature:road|element:all|visibility:off',
+%                 '&style=feature:administrative|element:geometry|visibility:off',
+%                 '&style=feature:transit.line|element:geometry|visibility:off',
+%                 '&style=feature:water|element:geometry.fill|color:0xffffff',
+%                 sep="")
+% totalMap <-  ggmap::get_googlemap(c((min(savex) + max(savex))/2, (min(savey) + max(savey))/2), zoom = 7, maptype = "terrain", color = "bw", style = style1, messaging = FALSE)
+% contourMap <- ggmap::ggmap(totalMap)
+% savexy <- data.frame(longitude = savex, latitude = savey)
+% contourMap <- contourMap + ggplot2::geom_point(data = savexy, ggplot2::aes(x = longitude,y = latitude), size=1.4, color = savecol)
+% contourMap <- contourMap + labs(x="longitude", y="latitude")
+% plot(contourMap)
+% @
+% \caption{\label{BrownFrogMap} The sampling localities for \emph{R.~m.~camerani} and \emph{R.~m.~macrocnemis} overlayed onto the map. Colour represents proportion of \emph{R.~m.~camerani} versus \emph{R.~m.~macrocnemis} individuals sampled, with red corresponding to 100\% \emph{R.~m.~camerani}, black 100\% \emph{R.~m.~macrocnemis} and brown corresponding to mixed populations. }
+% \end{figure}
 
 
 \pkg{BPEC} was applied to investigate geographic and environmental aggregation of haplotypes within \emph{R.~macrocnemis}. We included predictive environmental and climate covariates (topographic and land cover conditions, and annual trend patterns of temperature, precipitation and seasonality) to examine environment and geography as agents for the structuring of genetic variation.  Grid-based attribute values of a set of predictor
@@ -429,13 +436,9 @@ which contain the 40 sequences together with their corresponding longitude/latit
 \subsection{Main MCMC command and options}
 Once the \code{rawSeqs} and \code{coordsLocs} variables have been loaded, the Markov chain Monte Carlo sampler can be run through the command
 
-<< eval = TRUE, echo = TRUE, results = hide >>=
+<< eval = FALSE, echo = TRUE, results = hide >>=
 bpecout <- bpec.mcmc(rawSeqs, coordsLocs, maxMig = 3, iter = 1000000,
                     ds = 3, postSamples = 1000, dims = 8)
-@
-
-<< eval = TRUE, echo = FALSE>>=
-#load("bpecout.RData")
 @
 
 The arguments are described in Table~\ref{tab:bpecArguments}.
@@ -614,12 +617,13 @@ As described in the previous section, the Markov chain Monte Carlo sampler retur
 
 << results=hide,echo=FALSE>>=
 #save(bpecout,file="bpecout.RData")
+load("bpecout.RData")
 @
 
 \subsubsection{Geographical contour plot}
 The command \code{bpec.contourPlot} provides a colour-coded contour plot of the geographical clusters superimposed onto a map (provided accurate longitude and latitude coordinates have been provided) using
 
-<<fig = FALSE, width=5, height=3,echo=TRUE,results=hide >>=
+<<eval = FALSE, fig = FALSE, width=5, height=3,echo=TRUE,results=hide >>=
 par(mar = c(0, 0, 0, 0))
 bpec.contourPlot(bpecout, GoogleEarth = 0, mapType = "osm",
                  colorCode = c(7, 5, 6, 3, 2), mapCentre = NULL, zoom = 7)
@@ -628,18 +632,19 @@ In order to convey not only posterior means but also uncertainty, a set of poste
 
 The sampling locations are also shown on this contour plot, with the top three sampling locations in terms of their probability of being ancestral shown as larger points. The precise posterior probabilities (which may all be low in the presence of uncertainty) of each of the localities being ancestral can be found through \code{output.tree(bpecout)$rootLocProbs}.
 
- The colours can be changed through the optional argument \code{colorCode} (with default value \code{(7,5,6,3,2,8,4,9)}) which controls the colour of the first, second, third cluster etc; if not specified, the default colour scheme is used.  There are four options for the argument \code{mapType}: \code{`none'} will show the posterior distribution of the clusters against a white background, \code{`plain'} will use the in-built outline \proglang{R} maps, \code{`google'} will superimpose the contours on a map downloaded from Google maps (requires an internet connection), and \code{`osm'} will do the same using OpenStreetMap. The optional arguments \code{mapCentre} and \code{zoom} allow the user to specify the centre of the map and level of zooming when using the Google maps option.
+ The colours can be changed through the optional argument \code{colorCode} (with default value \code{(7,5,6,3,2,8,4,9)}) which controls the colour of the first, second, third cluster etc; if not specified, the default colour scheme is used.  There are four options for the argument \code{mapType}: \code{`none'} will show the posterior distribution of the clusters against a white background, \code{`plain'} will use the in-built outline \proglang{R} maps, \code{`google'} will superimpose the contours on a map downloaded from Google maps (requires an internet connection) \cite{ggmap}, and \code{`osm'} will do the same using OpenStreetMap. The optional arguments \code{mapCentre} and \code{zoom} allow the user to specify the centre of the map and level of zooming when using the Google maps option.
 
  In the case of the brown frog dataset, the contour plot is shown in Figure~\ref{ContourPlot}.
  The posterior mass for the number of clusters strongly concentrates around 2 (as indicated by the output \code{output.clust(bpecout)$migProbs}), with the posterior probability of 2 clusters being greater than 0.99. The yellow cluster can be taxonomically aligned to the subspecies \emph{R.~m.~macrocnemis} lineage, while the turquoise cluster includes individuals of \emph{R.~m.~macrocnemis} from the humid and forested mountain region, and individuals assigned to \emph{R.~m.~camerani} from the drier area of the southern treeless mountain steppe habitats of the Javakheti plateau. The contour ellipses overlap in the heart of the geographic transition zone south of the Minor Caucasus.
 
 \begin{figure}[h!]
 \centering
-<<fig = TRUE, width=5, height=3,echo=FALSE,results=hide >>=
-par(mar = c(0, 0, 0, 0))
-bpec.contourPlot(bpecout, GoogleEarth = 0, mapType = 'google',
-                 colorCode = c(7, 5, 6, 3, 2), mapCentre = NULL, zoom = 7)
-@
+\includegraphics[width=10cm]{BPEC-009.pdf}
+%<<fig = TRUE, width=5, height=3,echo=FALSE,results=hide >>=
+%par(mar = c(0, 0, 0, 0))
+%bpec.contourPlot(bpecout, GoogleEarth = 0, mapType = 'osm',
+%                 colorCode = c(7, 5, 6, 3, 2), mapCentre = NULL, zoom = 7)
+%@
 \caption{\label{ContourPlot} An example of the contour plot for the brown frog dataset using \code{bpec.contourPlot}. Each transparent geographical ellipse represents a posterior draw for the geographic centre of the cluster within the 50\% level contour of that draw. The 50\% contour represents the boundary where probability density of the cluster is 50\% of the maximum density (i.e.,~the centre of the cluster). Solid ellipses represent posterior means. Larger triangles represent most likely ancestral locations. The black jagged lines show the outline of the geographical map of the area.
 }
 \end{figure}
@@ -656,17 +661,18 @@ Finally, a `messy' looking plot such as the toy example in Figure~\ref{messy} ei
 
 \subsubsection{Environmental and/or phenotypic covariates plot}
 In cases where environmental or phenotypic covariates have also been used, posterior draws for the distribution of the covariates within clusters are available through cluster means \code{output.clust(bpecout)$sampleMeans} and covariances \code{output.clust(bpecout)$sampleCovs}. These can be summarized through posterior medians and 5/95\% credible regions, colour-coded using the same coding as the contour plot. To aid plotting and interpretation,  the covariate names of each of the columns of \code{coordsLocs} are used. The first two (corresponding to longitude and latitude) are automatically ignored in this function.
-<< results=hide >>=
+<< eval = FALSE, results=hide >>=
 par(mfrow = c(2, 3))
 bpec.covariatesPlot(bpecout, colorCode = c(7, 5, 6, 3, 2))
 @
 
 \begin{figure}[h!]
 \centering
-<< fig = TRUE, width=8, height=6,echo=FALSE,results=hide>>=
-par(mfrow = c(2, 3),mar = c(5, 4, 1, 1) + 0.1)
-bpec.covariatesPlot(bpecout, colorCode = c(7, 5, 6, 3, 2))
-@
+\includegraphics[width=16cm]{ManolopoulouHilleEmersonBPEC_R4-012.pdf}
+%<< fig = TRUE, width=8, height=6,echo=FALSE,results=hide>>=
+%par(mfrow = c(2, 3),mar = c(5, 4, 1, 1) + 0.1)
+%bpec.covariatesPlot(bpecout, colorCode = c(7, 5, 6, 3, 2))
+%@
 \caption{\label{CovariatesPlot} Plot of the distribution of the covariates for each cluster for the brown frog dataset using \code{bpec.covariatesPlot}. Shaded regions correspond to 5\% and 95\% pointwise credibility bands of each cluster, with solid lines showing the pointwise median. Colour corresponds to the same clusters as the contour plot above. }
 \end{figure}
 
@@ -674,7 +680,7 @@ The plot produced in the case of the brown frog dataset is shown in Figure~\ref{
 
 \subsubsection{Clustered tree plot}
 To visualize the maximum a posteriori haplotype tree, the command \code{bpec.treePlot} plots the haplotype tree most supported by the data.  The size of each node in the tree represents the number of times each haplotype was observed, black dots corresponding to missing intermediate haplotypes.  The thickness of each edge represents the posterior probability that each mutation occurred (thin edges corresponding to mutations with high uncertainty). Observed haplotypes are colour-coded according to their posterior probability of belonging to each cluster. As long as the same \code{colorCode} variable is used, the cluster colours correspond to the ones used in the geographical and covariate contour plots.
-<< results=hide>>=
+<< results=hide, eval = FALSE>>=
 bpec.tree <- bpec.treePlot(bpecout, colorCode = c(7, 5, 6, 3, 2))
 @
 
@@ -695,7 +701,7 @@ bpec.tree <- bpec.treePlot(bpecout, colorCode = c(7, 5, 6, 3, 2))
 The tree plot can also be partially visualised geographically through the \code{bpec.geoTree} command which superimposes the haplotype tree onto a map through a file that can be loaded into Google Earth. The function uses the \pkg{igraph} package \citep{Csardi:2006uq} as well as \pkg{phytools} \citep{Revell:2012fk,valiente2010combinatorial} in order to visualise the network as an interactive tree. Finally, to overlay the tree onto the map, the archived library \pkg{R2G2} is used \citep{arrigo2012quantitative,arrigo2013R2G2}.
 Since haplotypes can be observed in multiple locations, clicking on particular nodes of the tree shows the locations where each copy of the haplotype was found. However, when multiple haplotypes were found in a single location, only one will be displayed, so the \code{bpec.geoTree} may not tell the whole story. Also note that only existing tip haplotypes are possible to identify on the map.
 
-<<results=hide >>=
+<<eval = FALSE, results=hide >>=
 bpec.geo <- bpec.geoTree(bpecout, file = "GoogleEarthTree.kml")
 @
 

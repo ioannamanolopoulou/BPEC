@@ -1,0 +1,20 @@
+bibentry(bibtype = "Article",
+  title        = "{BPEC}: An {R} Package for Bayesian Phylogeographic and Ecological Clustering",
+  author       = c(person(given = "Ioanna",
+                          family = "Manolopoulou",
+                          email = "ioanna@stats.ucl.ac.uk"),
+                   person(given = "Axel",
+                          family = "Hille",
+                          email = "axel.hille@gmx.net"),
+                   person(given = "Brent",
+                          family = "Emerson")),
+  journal      = "Journal of Statistical Software",
+  year         = "2020",
+  volume       = "92",
+  number       = "5",
+  pages        = "1--32",
+  doi          = "10.18637/jss.v092.i05",
+
+  header       = "To cite BPEC in publications use:"
+)
+
